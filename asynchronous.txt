@@ -1,0 +1,29 @@
+Asynchronous code can start something now and finish it later…
+Written by twitter, fb, youtube, soundcloud.
+
+Synchronous JS
+JavaScript code runs on a single thread (can do 1 thing at a time)
+Synchronous code waits for 1 action to complete before moving on to the next
+Var article = readSync(article_loc);
+console.log(article);
+Var authors = readSync(authors_loc);
+console.log(authors);
+
+If 10 seconds long to load article_loc, you cant run JS in the mean time.
+
+Asynchronous JS
+readAsync(article_loc, function(){
+console.log(article);
+});
+readAsync(authors_loc, function(){
+console.log(authors);
+});
+Request where it will get data and carry on
+Frees up to move onto other things
+
+JavaScripts- makes a queue when it first reads your file
+
+Synchronous Code goes in order and files in order to fire the function it needs to do.
+Callbacks-Good
+Promises-better
+Generators-awesome
