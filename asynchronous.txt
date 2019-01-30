@@ -27,3 +27,9 @@ Synchronous Code goes in order and files in order to fire the function it needs 
 Callbacks-Good
 Promises-better
 Generators-awesome
+
+AJAX Requests
+Communicate with a server by making a request
+No need to reload the page
+Stands for:
+Asynchronous JavaScript and XML
